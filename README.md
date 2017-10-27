@@ -1,11 +1,11 @@
 # This project showcases that one can start Altus ETL jobs out of a CDSW Job in a sheduled way
 
-##Relevant Files:
+## Relevant Files:
 
 * altus.py: contains the script that performs ETL with Altus first before interpreting the ETL output in Python
 * runETL.sh: contains the Altus command that is being send to Altus
 
-##Prerequisites: 
+## Prerequisites: 
 
 * Provide the data and spark application in S3 Buckets. The scripts currently point to:
    * s3a://fhereygersaltus/spark/data/input/
@@ -30,5 +30,5 @@
    ```
 * Rename that the referenced cluster *fhereygers* in file runETL.sh to an existing cluster within Altus. Alternatively you can also adapt the script to create a cluster.
 
-##Demo hints 
+## Demo hints 
 One can start a recurring job in CDSW (The Altus job finishes in ca 2 minutes)
